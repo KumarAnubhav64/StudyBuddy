@@ -7,21 +7,20 @@
 ### Cloning the repository
 
 --> Clone the repository using the command below :
-```bash
-git clone https://github.com/divanov11/StudyBud.git
-
+```bash[
+git clone https://github.com/KumarAnubhav64/StudyBuddy.git
 ```
 
 --> Move into the directory where we have the project files : 
 ```bash
-cd StudyBud
+cd StudyBuddy
 
 ```
 
---> Create a virtual environment :
+--> Use uv to create virtual environment environment :
 ```bash
 # Let's install virtualenv first
-pip install virtualenv
+pip install uv
 
 # Then we create our virtual environment
 virtualenv envname
@@ -36,7 +35,7 @@ envname\scripts\activate
 
 --> Install the requirements :
 ```bash
-pip install -r requirements.txt
+uv add  requirements.txt
 
 ```
 
@@ -46,7 +45,7 @@ pip install -r requirements.txt
 
 --> To run the App, we use :
 ```bash
-python manage.py runserver
+uv run manage.py runserver
 
 ```
 
